@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
-
+import LeftComponent from './components/leftComponent/LeftComponent';
+import RightComponent from './components/rightComponent/RightComponent';
+import ApiProvider from './context/ApiContext';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ApiProvider>
+      <div className='App'>
+        <div className='container'>
+          <div className='title'>
+            <p>SPLI</p>
+            <p>TTER</p>
+          </div>
+          <div className='main'>
+            <LeftComponent />
+            <RightComponent />
+          </div>
+        </div>
+      </div>
+    </ApiProvider>
   );
 }
 

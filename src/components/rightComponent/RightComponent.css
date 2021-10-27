@@ -1,0 +1,85 @@
+.right-container{
+    width: 50%;
+    height: 370px;
+    margin: 0 10px;
+   
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(183, 100%, 15%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.amount-container{
+    width: 80%;
+    margin:20px 0 0 30px;    
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.display{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.top{
+    color: white;
+    font-size: 16px;
+}
+.bottom{
+    color: hsl(186, 14%, 43%);
+    font-size: 13px;
+}
+.amount-display{
+    color: hsl(172, 67%, 45%);
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.reset-button{
+    margin-bottom: 30px;
+    width: 100%;
+   
+    
+}
+.reset-button > .button{
+    padding: 10px 0;
+    width: 80%;
+    background-color: hsl(183, 96%, 21%);
+    border: none;
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+    border-radius: 4px;
+}
+.reset-button > .button:hover {
+    background-color: hsl(172, 67%, 45%);
+}
+
+
+.reset-button >.no-drop{
+    padding: 10px 120px;
+    background-color: hsl(183, 96%, 21%);
+    border: none;
+    pointer-events: none;
+    color: hsl(183, 100%, 15%);
+    
+    border-radius: 4px;
+}
+@media(max-width: 760px){
+    .right-container{
+        height: 300px;
+        width: 85%;
+        margin: 0 10px 0 30px;
+    }
+   
+}
+@media(max-width: 320px){
+    .right-container{
+       
+        margin: 0 10px 0 25px;
+    }
+  
+   
+}

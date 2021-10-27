@@ -1,0 +1,97 @@
+.tips-container{
+    
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Space Mono', monospace;
+    
+}
+.tip-title{
+    margin: 0 0 10px 12px;
+    font-weight: 800;
+    color: hsl(184, 14%, 56%);
+}
+.tip-block{
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tip-block-main{
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    place-items: center;
+}
+
+.tip{
+    height: 40px;
+    width: 97px;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    font-weight: 700;
+    border: none;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.tip-enable{
+    height: 40px;
+    width: 97px;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+    font-weight: 700;
+    border: none;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tip:hover{
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+} 
+.custom{
+    background: hsl(189, 41%, 97%);
+    color:hsl(183, 100%, 15%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.custom:hover{
+    background-color: hsl(189, 41%, 97%);
+    border: 1px solid hsl(183, 100% ,15%);
+}
+.custom-enable{
+    background-color: hsl(189, 41%, 97%);
+    border: 1px solid hsl(183, 100% ,15%);
+}
+.custom > input {
+    width: 100%;
+    border: none;
+    height: 37px;
+    border:none;
+    text-align: right;
+    font-size: 20px;
+    margin-right: 5px;
+    color: hsl(183, 100% ,15%);
+    font-weight: 700;
+    
+}
+.custom > input:focus {
+   outline: none;
+}
+.custom>input::placeholder{
+    color:hsl(183, 100%, 15%);
+    font-size: 20px;
+    text-align: center;
+}
+/* @media(max-width:760px){
+    .tips-container> span{
+     margin-top: 60px;
+    }
+} */
